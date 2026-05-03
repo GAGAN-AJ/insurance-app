@@ -1,5 +1,3 @@
-# insurance-app
-Machine Learning app to predict insurance premium using Streamlit
 # Insurance Premium Prediction App
 
 A Machine Learning web application built using Streamlit that predicts insurance premium based on user inputs such as age, BMI, smoking habits, and region.
@@ -32,9 +30,9 @@ A Machine Learning web application built using Streamlit that predicts insurance
   - Age
   - BMI
   - Children
-  - Smoker
-  - Gender 
-  - Region 
+  - Smoker (encoded: yes=1, no=0)
+  - Gender (one-hot encoded)
+  - Region (label encoded)
 
 ---
 
@@ -53,14 +51,3 @@ A Machine Learning web application built using Streamlit that predicts insurance
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
-Project Structure
-insurance-app/
-│── app.py
-│── model_gb.pkl
-│── requirements.txt
-│── README.md
-
-Author
-
-Gagan A J
